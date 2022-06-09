@@ -14,3 +14,7 @@ Other info as needed: N/A
 
 
 
+Apple
+Space: Don't need rack space. Will bring a few laptops, iPhones that can be placed on table.
+Power: Standard power needs for small devices
+Network: Same as above
