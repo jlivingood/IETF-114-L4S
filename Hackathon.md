@@ -8,8 +8,7 @@ will take place [https://trac.ietf.org/trac/ietf/meeting/wiki/114hackathon].
 - TBD
 
 *Proposed Dates*:
-- Beginning July 23-24, 2022, during the IETF-114 Hackathon
-- Continuing through the rest of the week of IETF-114
+- July 23-26, 2022, beginning during the IETF-114 Hackathon, and continuing for two additional days.
 
 *Interested Parties*: Anyone can of course participate, but please let us know by filing an issue or pull request if you will be joining this activity. 
 
