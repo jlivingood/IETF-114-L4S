@@ -17,3 +17,5 @@ In alphabetical order:
 - CableLabs
 - Comcast
 - Google
+- Nokia (TBC)
+- NVIDIA
