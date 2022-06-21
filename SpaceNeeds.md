@@ -53,3 +53,21 @@ Network: 2 GigE RJ45 connections (1 connection network side of CMTS, other is fo
 Is the equipment noisy: Yes, the CMTS mobile rack goes in the "NOC" area.
 
 Other info as needed: 
+=======
+
+# Casa
+
+Equipment in NOC:
+- 1RU - Dell R630 vCCAP server
+- 1RU - Dell R650 DHCP/TFTP/ToD/ETC server
+- 1RU - FiberStore N5860 ToR Switch/Router
+- 1RU - Aruba 2920 Switch - management vlan (hosts/idracs)
+- 1RU - ADVA/OSA 5420 PTP Clock
+
+All of the above should be under 10A total.
+
+Equipment at demo station:
+- DA1250 RPD - AC wall plug power, need 10G mm Fiber to ToR switch in NOC
+- Laptop - need 1G Ethernet cable to Management switch in NOC
+- 2 Cable modems - will set up as baseline.
+
