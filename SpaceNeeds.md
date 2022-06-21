@@ -42,6 +42,18 @@ Is the equipment noisy:
 
 Other info as needed:
 
+# CommScope
+
+Space: TBD it looks like we will bring in our travel mini-rack with the CMTS and servers for DHCP etc. 
+
+Power: 5 120V/15A standard connections (4 for the CMTS mobile rack, 1 for connecting CPEs, laptops etc)
+
+Network: 2 GigE RJ45 connections (1 connection network side of CMTS, other is for any other possible need as backup)
+
+Is the equipment noisy: Yes, the CMTS mobile rack goes in the "NOC" area.
+
+Other info as needed: 
+=======
 
 # Casa
 
@@ -58,3 +70,4 @@ Equipment at demo station:
 - DA1250 RPD - AC wall plug power, need 10G mm Fiber to ToR switch in NOC
 - Laptop - need 1G Ethernet cable to Management switch in NOC
 - 2 Cable modems - will set up as baseline.
+
