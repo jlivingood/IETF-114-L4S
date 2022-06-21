@@ -52,9 +52,6 @@ Network: 2 GigE RJ45 connections (1 connection network side of CMTS, other is fo
 
 Is the equipment noisy: Yes, the CMTS mobile rack goes in the "NOC" area.
 
-Other info as needed: 
-=======
-
 # Casa
 
 Equipment in NOC:
