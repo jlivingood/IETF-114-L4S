@@ -24,15 +24,13 @@ Other info as needed: Dedicated internet connection via L4S critical path would 
 
 # Nokia
 
-Space: 
+Space: Don't need rack space. Will bring a few laptops, smartphones, desktop and (a) monitor(s) servers that can be placed on a table/trolley.
 
-Power: 
+Power: US and EU plugs (we can bring adapters and extension cables)
 
-Network: 
+Network: We will bring some simple L2 switches.
 
-Is the equipment noisy: 
-
-Other info as needed:
+Is the equipment noisy: No.
 
 # CommScope
 
