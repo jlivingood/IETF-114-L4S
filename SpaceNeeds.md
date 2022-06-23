@@ -1,7 +1,5 @@
 Space, Power, and Networking Needs for IETF-114
 
-PLEASE COMPLETE BY EOD 15 JUNE 2022
-
 Please add your requirements below. 
 
 # Apple
@@ -12,7 +10,7 @@ Power: Standard power needs for small devices
 Network: Same as above
 
 # NVIDIA
-Space: Don't need rack space. Will bring 2 workstations (client, server) that can be placed on table).
+Space: Don't need rack space. Will bring 2 workstations (client, server) that can be placed on a table.
 
 Power: 2 standard 120V grounded AC connections.
 
