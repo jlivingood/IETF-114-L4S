@@ -56,3 +56,33 @@ Equipment at demo station:
 - Laptop - need 1G Ethernet cable to Management switch in NOC
 - 2 Cable modems - will set up as baseline.
 
+Casa vCCAP L4S/LLD Demo IP Ranges as currently configured:
+
+Aruba switch
+used for management all connections in 10.201.15.0/24
+this subnet will be private to vccap setup and not visible
+
+ToR switch/router
+used for vlan/routing nb/sb
+2 connections to vCCAP (CP/DP) vlan trunk (Core/Access/FFE/Mgmt vlans)
+2 connections to DHCP/ETC server, 1 Core, 1 Access untagged
+1 connection to PTP clock (routed) untagged
+K8S uses 10.244.0.0/24 but think it will not be visible
+FFE/Mgmt vlans should also not be visible
+Core/NSI - 10.79.2.0/24
+Access/CIN - 10.78.5.0/24 (DP/RPD)
+
+vCCAP has ip-bundle interface with
+10.101.40.0/24 cm
+10.101.41.0/24 cpe
+
+PTP Clock - 10.98.5.0/24
+routed via ToR
+
+TBD
+Northbound interface to "IETF Ethernet" switch
+
+vCCAP and ToR both run ospf
+
+
+
