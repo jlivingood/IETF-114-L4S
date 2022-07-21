@@ -3,6 +3,7 @@
 * All devices must respond to pings
 * Set whatever DNS/NTP servers you like: IETF network is 2001:67c:370:229::6 & 31.130.229.6 and 2001:67c:370:229::7 & 31.130.229.7 
 * Important: Send MAC addresses of the routers to Clemens at csch@kiez.net in order for routing to be activated!
+* Network diagram at https://lucid.app/lucidchart/7ebd65d7-994f-42c7-91ca-4e2a64facb39/edit?invitationId=inv_9683dfb5-818f-4a8f-9a5a-075bceaeb7bd&page=0_0#
 
 # IETF-114 Router IP addresses
 
