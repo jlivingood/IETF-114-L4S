@@ -1,56 +1,73 @@
+# Notes
+
+* All devices must respond to pings
+* Set whatever DNS/NTP servers you like: IETF network is 2001:67c:370:229::6 & 31.130.229.6 and 2001:67c:370:229::7 & 31.130.229.7 
+* Important: Send MAC addresses of the routers to Clemens at csch@kiez.net in order for routing to be activated!
+
 # IETF-114 Router IP addresses
 
-IPv6 = 2001:67c:370::/48 and 2001:67c:1230::/46 
+* IPv6 = 2001:67c:1230:601::1
+* IPv4 = 31.130.239.1
 
-IPv4 = 31.133.128.0/18 and 31.130.224.0/20 
+# Addressing Scheme
 
-# 3 static addresses (IPv4, IPv6)
-We'll assign to each of these routers (1) Casa CMTS, (2) CommScope CMTS, (3) Nokia WiFi Router AP
+1. Casa 
 
-1. Casa CMTS
-* IPv4 31.133.XXX.1 /24, subnet mask 255.255.255.0, static route to 31.133.128.1
-* IPv6 unicast is 2001:67c:1230:XXX:XXX:XXX:XXX:XXX, subnet is 2001:67c:1230:XXX::/50 
+1.1 CMTS
+* Send MAC address of interface to Clemens at csch@kiez.net in order for routing to be activated
+* IPv4 31.130.239.17/24, subnet mask 255.255.255.0, static route to 31.130.239.1
+* IPv6 unicast is 2001:67c:1230:601::17/64, static route to 2001:67c:1230:601::1
 
-2. CommScope
-* IPv4 31.133.XXX.1 /24, subnet mask 255.255.255.0, static route to 31.133.128.1
-* IPv6 unicast is 2001:67c:1230:XXX:XXX:XXX:XXX:XXX, subnet is 2001:67c:1230:XXX::/50
+1.2 DHCP Scopes for Clients
+* IPv4 (from 31.133.188.0/24) 31.133.188.10 - .254, subnet mask 255.255.255.0, route to 31.130.239.17
+* IPv6 2001:67c:1233:4000::/50 (hand out /56 prefix to each CM), route to 2001:67c:1230:601::17
 
-3. Nokia WiFi AP Router
-* IPv4 31.133.XXX.1 /24, subnet mask 255.255.255.0, static route to 31.133.128.1
-* IPv6 unicast is 2001:67c:1230:XXX:XXX:XXX:XXX:XXX, subnet is 2001:67c:1230:XXX::/50
-
-# DHCP Scopes for clients 
-1. Casa
-* IPv4 xxx.xxx.xxx.10 - .254, subnet mask 255.255.255.0
-* IPv6 2001:67c:1230:XXX::/56
-2. CommScope
-* IPv4 xxx.xxx.xxx.10 - .254, subnet mask 255.255.255.0
-* IPv6 2001:67c:1230:XXX::/56
-3. Nokia
-* IPv4 xxx.xxx.xxx.10 - .254, subnet mask 255.255.255.0
-* IPv6 2001:67c:1230:XXX::/56
-
-# Servers 
-1. Casa
-* Dell R630 XXX.XXX.XXX.2, subnet mask 255.255.255.0, static route to 31.133.128.1
-* Dell R640 XXX.XXX.XXX.3, subnet mask 255.255.255.0, static route to 31.133.128.1
-* Clock XXX.XXX.XXX.4, subnet mask 255.255.255.0, static route to 31.133.128.1
+1.3 Servers
+* Option to use SLAAC/DHCP
+* Dell R630 31.133.188.2, subnet mask 255.255.255.0, static route to 31.130.239.1
+* Dell R640 31.133.188.3, subnet mask 255.255.255.0, static route to 31.130.239.1
+* Clock 31.133.188.4, subnet mask 255.255.255.0, static route to 31.130.239.1
 * Also available .5 to .9
 
-2. CommScoope 
-* DHCP-1 XXX.XXX.XXX.2, subnet mask 255.255.255.0, static route to 31.133.128.1
-* DHCP-2 XXX.XXX.XXX.3, subnet mask 255.255.255.0, static route to 31.133.128.1
+2. CommScope
+
+2.1 CMTS
+* Send MAC address of interface to Clemens at csch@kiez.net in order for routing to be activated
+* IPv4 31.130.239.18/24, subnet mask 255.255.255.0, static route to 31.130.239.1
+* IPv6 unicast is 2001:67c:1230:601::18/64, static route to 2001:67c:1230:601::1
+
+2.2 DHCP Scope for Clients
+* IPv4 (from 31.133.189.0/24) 31.133.189.10 - .254, subnet mask 255.255.255.0, route to 31.130.239.18
+* IPv6 2001:67c:1233:8000::/50 (hand out /56 prefix to each CM), route to 2001:67c:1230:601::18
+
+2.3 Servers
+* Option to use SLAAC/DHCP
+* DHCP-1 31.133.189.2, subnet mask 255.255.255.0, static route to 31.130.239.1
+* DHCP-2 31.133.189.3, subnet mask 255.255.255.0, static route to 31.130.239.1
 * Also available .4 to .9
 
 3. Nokia 
-* Emulator XXX.XXX.XXX.2, subnet mask 255.255.255.0, static route to 31.133.128.1
+
+3.1 WiFi AP Router
+* Send MAC address of interface to Clemens at csch@kiez.net in order for routing to be activated
+* IPv4 31.130.239.19/24, subnet mask 255.255.255.0, static route to 31.130.239.1
+* IPv6 unicast is 2001:67c:1230:601::19/64, static route to 2001:67c:1230:601::1
+
+3.2 DHCP Scope for Clients
+* IPv4 (from 31.133.190.0/24) 31.133.190.10 - .254, subnet mask 255.255.255.0, route to 31.130.239.19
+* IPv6 2001:67c:1233:c000::/50 (hand out /56 prefix to each AP), route to 2001:67c:1230:601::19
+
+3.3 Servers
+* Option to use SLAAC/DHCP
+* Emulator 31.133.190.2, subnet mask 255.255.255.0, static route to 31.130.239.1
 * Also available .3 to .9
 
-4. Load/Test Servers
-* Nokia App Server xxx.xxx.xxx.2, subnet mask 255.255.255.0 
-* FreeBSD Server xxx.xxx.xxx.3, subnet mask 255.255.255.0
-* Apple QUIC Server xxx.xxx.xxx.4, subnet mask 255.255.255.0
-* PicoQUIC Server xxx.xxx.xxx.5, subnet mask 255.255.255.0
-* Nokia App Server xxx.xxx.xxx.6, subnet mask 255.255.255.0
-* Nokia Load Server xxx.xxx.xxx.7, subnet mask 255.255.255.0
-* Google TCP Server xxx.xxx.xxx.8, subnet mask 255.255.255.0
+4. Load/Test Servers: USE SLAAC / DHCP
+* Nokia App Server 
+* FreeBSD Server 
+* Apple QUIC Server 
+* PicoQUIC Server 
+* Nokia App Server 
+* Nokia Load Server 
+* Google TCP Server 
+* CableLabs Network Monitor Server 
