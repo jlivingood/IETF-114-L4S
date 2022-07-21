@@ -4,7 +4,7 @@ IPv6 = 2001:67c:370::/48 and 2001:67c:1230::/46
 
 IPv4 = 31.133.128.0/18 and 31.130.224.0/20 
 
-# 3 static addresses (IPv4, IPv4)
+# 3 static addresses (IPv4, IPv6)
 We'll assign to each of these routers (1) Casa CMTS, (2) CommScope CMTS, (3) Nokia WiFi Router AP
 
 1. Casa CMTS
