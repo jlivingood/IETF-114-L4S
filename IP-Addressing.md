@@ -15,7 +15,7 @@
 1. Casa 
 
 1.1 CMTS
-* Send MAC address of interface to Clemens at csch@kiez.net in order for routing to be activated
+* MAC address 649D:99D0:507D of interface has been sent to Clemens at csch@kiez.net in order for routing to be activated
 * IPv4 31.130.239.17/24, subnet mask 255.255.255.0, static default route to 31.130.239.1
 * IPv6 unicast is 2001:67c:1230:601::17/64, static default route to 2001:67c:1230:601::1
 
@@ -35,7 +35,7 @@
 2. CommScope
 
 2.1 CMTS
-* Send MAC address of interface to Clemens at csch@kiez.net in order for routing to be activated
+* MAC address 0001.5cab.aa02 of interface has been sent to Clemens at csch@kiez.net in order for routing to be activated
 * IPv4 31.130.239.18/24, subnet mask 255.255.255.0, static route to 31.130.239.1
 * IPv6 unicast is 2001:67c:1230:601::18/64, static default route to 2001:67c:1230:601::1
 
