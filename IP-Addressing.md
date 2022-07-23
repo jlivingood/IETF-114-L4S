@@ -20,8 +20,8 @@
 * IPv6 unicast is 2001:67c:1230:601::17/64, static default route to 2001:67c:1230:601::1
 
 1.2 DHCP Scopes for Clients
-* IPv4 (from 31.133.188.0/24) 31.133.188.2 - .254, subnet mask 255.255.255.0, route to 31.130.239.17
-* IPv6 2001:67c:1233:4000::/50 (hand out /56 prefix to each CM), route to 2001:67c:1230:601::17
+* IPv4 (from 31.133.188.0/24) 31.133.188.2 - .254, subnet mask 255.255.255.0, gateway 31.133.188.1
+* IPv6 2001:67c:1233:4000::/50 (hand out /56 prefix to each CM)
 
 1.3 DHCP Scopes for CMs
 * IPv4 / IPv6 private IP
@@ -40,8 +40,8 @@
 * IPv6 unicast is 2001:67c:1230:601::18/64, static default route to 2001:67c:1230:601::1
 
 2.2 DHCP Scope for Clients
-* IPv4 (from 31.133.189.0/24) 31.133.189.2 - .254, subnet mask 255.255.255.0, route to 31.130.239.18
-* IPv6 2001:67c:1233:8000::/50 (hand out /56 prefix to each CM), route to 2001:67c:1230:601::18
+* IPv4 (from 31.133.189.0/24) 31.133.189.2 - .253, subnet mask 255.255.255.0, gateway 31.133.189.254
+* IPv6 2001:67c:1233:8000::/50 (hand out /56 prefix to each CM)
 
 2.3 DHCP Scopes for CMs
 * IPv4 / IPv6 private IP
